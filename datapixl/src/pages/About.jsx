@@ -5,8 +5,8 @@ import Container from "../components/Container";
 const About = () => {
   return (
     <Container>
-      <div className="min-h-screen container mx-auto mb-5 ">
-        <h1 className="text-center mt-12 lg:mt-20 lg:mb-12 font-semibold text-secondary text-[20px] lg:text-[40px] ">
+      <div className="min-h-screen container mx-auto mb-5 p-2 ">
+        <h1 className="text-center mt-12 lg:mt-20 lg:mb-12 font-semibold text-secondary text-[26px] lg:text-[40px] ">
           Your AI growth partner
         </h1>
         <div className="flex gap-3 lg:gap-16 flex-col-reverse lg:flex-row ">
@@ -25,11 +25,13 @@ const About = () => {
                 {AboutData.map((data, index) => {
                   return (
                     <div key={index} className="flex items-center gap-3 mt-4">
-                      <img
-                        src="/About/correct.svg"
-                        className="object-contain object-center  w-[24px] h-[24px]"
-                        alt=""
-                      />
+                      <div className="flex justify-center items-center">
+                        <img
+                          src="/About/correct.svg"
+                          className="object-contain object-center  w-[24px] h-[24px]"
+                          alt=""
+                        />
+                      </div>
                       <div className="flex gap-1 text-[20px] flex-wrap font-normal lg:flex-row lg:justify-between lg:items-center">
                         <span className="text-secondary">
                           {data.title}
@@ -47,7 +49,7 @@ const About = () => {
           <div>
             <img
               src="/About/aboutimg.svg"
-              className="object-contain p-4 lg:p-0 mdp-0 rounded-lg md:object-cover lg:object-center w-[388px] h-[388px]"
+              className="object-contain  lg:p-0 mdp-0 rounded-lg md:object-cover lg:object-center w-[388px] h-[388px]"
               alt=""
             />
           </div>

@@ -15,7 +15,9 @@ import Contact from "./Contact";
 const Layout = () => {
   return (
     <div>
-      <Element name="Home"></Element>
+      <Element name="Home">
+        <Home />
+      </Element>
       <Element className="about">
         <About />
       </Element>

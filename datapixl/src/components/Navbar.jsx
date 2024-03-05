@@ -5,52 +5,49 @@ import { Link } from "react-scroll";
 import { Link as Goto } from "react-router-dom";
 const Navbar = () => {
   const [show, setShow] = useState(false);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-  //   Events.scrollEvent.register("begin", (to, element) => {
-  //     console.log("begin", to, element);
-  //   });
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [homePageHeight, setHomePageHeight] = useState(0);
 
-  //   // Registering the 'end' event and logging it to the console when triggered.
-  //   Events.scrollEvent.register("end", (to, element) => {
-  //     console.log("end", to, element);
-  //   });
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentPosition = window.scrollY;
+      setScrollPosition(currentPosition);
+    };
 
-  //   // Updating scrollSpy when the component mounts.
-  //   scrollSpy.update();
+    window.addEventListener("scroll", handleScroll);
+    setHomePageHeight(window.innerHeight); // Get the initial height of the viewport
 
-  //   // Returning a cleanup function to remove the registered events when the component unmounts.
-  //   return () => {
-  //     Events.scrollEvent.remove("begin");
-  //     Events.scrollEvent.remove("end");
-  //   };
-  // }, []);
-  // // Defining functions to perform different types of scrolling.
-  // const scrollToTop = () => {
-  //   scroll.scrollToTop();
-  // };
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
-  // const scrollToBottom = () => {
-  //   scroll.scrollToBottom();
-  // };
+  useEffect(() => {
+    // Update homePageHeight if viewport is resized
+    const handleResize = () => {
+      setHomePageHeight(window.innerHeight);
+    };
 
-  // const scrollTo = () => {
-  //   scroll.scrollTo(100); // Scrolling to 100px from the top of the page.
-  // };
+    window.addEventListener("resize", handleResize);
 
-  // const scrollMore = () => {
-  //   scroll.scrollMore(100); // Scrolling an additional 100px from the current scroll position.
-  // };
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-  // // Function to handle the activation of a link.
-  // const handleSetActive = (to) => {
-  //   console.log(to);
-  // };
+  const isHomePage = scrollPosition < homePageHeight;
+  const navColor = isHomePage ? "white" : "black";
+
   return (
     <>
       <nav className="fixed bg-white w-screen border h-[76px] z-[100] ">
         <div className="flex justify-between  items-center  mx-8 my-6 lg:mx-32 lg:my-3">
           <div className="text-xl font-bold">
-            <Goto to={"/"}>
+            <Goto onClick={scrollToTop} to={"/"}>
               <img src="/Footer/logo.svg" alt="logo" />
             </Goto>
           </div>
@@ -62,8 +59,8 @@ const Navbar = () => {
                     activeClass="active"
                     spy={true}
                     smooth={true}
-                    offset={-100}
-                    duration={item.id > 2 ? 1000 : 500}
+                    offset={(item.id = 1 ? -70 : -100)}
+                    duration={500}
                     // onSetActive={handleSetActive}
                     to={item.path}
                   >
@@ -129,7 +126,9 @@ const Navbar = () => {
                             duration={500}
                             to={item.path}
                           >
-                            <span className="font-semibold text-3xl">
+                            <span
+                              className={` text-${navColor} font-semibold text-3xl`}
+                            >
                               {item.title}
                             </span>
                           </Link>
@@ -142,7 +141,15 @@ const Navbar = () => {
                       }}
                       className="bg-blue-600 text-xl mt-12 hover:bg-blue-700 focus:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:shadow-outline"
                     >
-                      <Link to="contact">Contact Us</Link>
+                      <Link
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        to="contact"
+                      >
+                        Contact Us
+                      </Link>
                     </button>
                   </div>
                 </div>

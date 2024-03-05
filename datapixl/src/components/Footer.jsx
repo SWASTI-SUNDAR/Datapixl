@@ -49,7 +49,7 @@ const Footer = () => {
       </Container>
       <div className="bg-[#1A2AEA] flex justify-center p-3">
         <span className="text-white">
-          Copyrights © 2024 , Datapixl. All rights reserved.
+          Copyright © 2024, Datapixl. All rights reserved.
         </span>
       </div>
     </div>
@@ -66,7 +66,7 @@ const FooterrData = [
   },
   {
     id: 2,
-    title: "Casestudy",
+    title: "Case Study",
     link: "projects",
   },
   {
@@ -76,7 +76,7 @@ const FooterrData = [
   },
   {
     id: 4,
-    title: "Partner us",
+    title: "Partner",
     link: "partners",
   },
   {

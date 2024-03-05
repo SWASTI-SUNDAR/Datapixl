@@ -4,7 +4,7 @@ export const PartnerData = [
     icon: "/Partner/icon1.svg",
     title: "Expert AI Strategy & Delivery: ",
     description:
-      "We combine deep AI knowledge with a proven track record to deliver scalable AI solutions tailored to your business.",
+      "We combine deep AI knowledge with a proven track record to deliver scalable AI solutions tailored to your business",
   },
   {
     id: 2,

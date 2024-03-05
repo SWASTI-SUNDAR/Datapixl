@@ -1,18 +1,32 @@
 import React from "react";
 import Button from "../components/Button";
+import SecButton from "../components/SecButton";
 const Home = () => {
   return (
     <>
       <section
-        className={` bg-[url(Home/background.svg)] bg-black 
-        max-w-[1330px] mx-auto min-h-screen bg-cover 
-        flex justify-center items-center  w-full
-        bg-opacity-50 min-w-screen overflow-hidden `}
+        className={` bg-[url(Home/background.svg)]
+         mx-auto min-h-screen bg-cover bg-center 
+         justify-center items-center  w-full
+        bg-opacity-50 min-w-screen overflow-hidden flex flex-col`}
         id="home"
       >
-        <div className="flex flex-col ">
-          <span className="text-white text-[40px]">AI Advisory &</span>
-          <span className="text-white text-[40px]">Engineering Services</span>
+        <div className="flex flex-col  gap-4 text-white font-bold p-5 ">
+          <div className="lg:text-[64px] text-[30px] ">
+            <h1 className=" text-center ">AI Advisory &</h1>
+            <h1 className=" text-center ">Engineering Services</h1>
+          </div>
+          <div className="flex justify-center">
+            <h1 className="text-center text-md">
+              Your strategic partner in harnessing the power of <br />{" "}
+              predictive and generative AI for unlocking sustainable <br />{" "}
+              business growth.
+            </h1>
+          </div>
+        </div>
+        <div className="mt-10 flex lg:flex-row flex-col justify-start lg:justify-center gap-16">
+          <Button>Book free consultation</Button>
+          <SecButton>Learn more</SecButton>
         </div>
       </section>
     </>

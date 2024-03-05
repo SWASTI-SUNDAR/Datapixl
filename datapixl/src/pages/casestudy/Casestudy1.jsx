@@ -7,6 +7,9 @@ import Button from "../../components/Button";
 import SecButton from "../../components/SecButton";
 
 const Casestudy1 = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="">
       <div>
@@ -19,10 +22,10 @@ const Casestudy1 = () => {
         })}
       </div>
       <Contact />
-      <div className="flex justify-center mb-16 ">
-        <SecButton>
-          <Link to={"/"}>Go back to home</Link>
-        </SecButton>
+      <div className="flex justify-center mt-12 mb-16 ">
+        <Link onClick={scrollToTop} to={"/"}>
+          <SecButton>Go back to home</SecButton>
+        </Link>
       </div>
     </div>
   );

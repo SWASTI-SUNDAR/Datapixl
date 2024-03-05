@@ -24,15 +24,15 @@ const CaseStudyCard = ({ data }) => {
           ></div>
 
           {/* Text */}
-          <h1 className="text-[32px] text-white z-[100] p-10 pt-32  relative">
+          <h1 className="lg:text-[32px] text-xl text-white z-[100] p-10 pt-32  relative">
             {data.heading}
           </h1>
-          <span className="mt-36 text-[14px] py-3 px-5 rounded-full ml-10 bg-[#CEF7F3]">
+          <span className="mt-36 text-[14px] lg:py-3 lg:px-5 px-3 py-2 rounded-full ml-10 bg-[#CEF7F3]">
             Case Study
           </span>
         </div>
       </section>
-      <div className="min-h-screen flex flex-col  w-screen opacity-90  object-center p-10 mx-auto ">
+      <div className=" flex flex-col  w-screen opacity-90  object-center p-10 mx-auto ">
         <h1 className="text-[24px] font-medium text-[#1A2AEA] max-w-5xl ">
           {data.title}
         </h1>

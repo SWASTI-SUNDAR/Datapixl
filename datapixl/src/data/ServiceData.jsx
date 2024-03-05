@@ -3,7 +3,7 @@ export const ServiceData = [
     id: 1,
     title: "Data & AI Strategy",
     icon: "/Services/icon1.svg",
-    Question: "Need expert guidance coupled with seamless Integration ?",
+    Question: "Need expert guidance coupled with seamless integration?",
     description:
       "Unlock the transformative potential of AI regardless of your stage. We offer tailored workshops and ongoing advisory support, guiding you from initial concept to real-world implementation.",
     benifits: [
@@ -17,7 +17,7 @@ export const ServiceData = [
       },
       {
         title: "Data-Driven Success :",
-        subtext: " Integrate AI securely into your existing systems.",
+        subtext: "Develop effective pricing & go-to-market strategies.",
       },
     ],
   },
@@ -25,14 +25,13 @@ export const ServiceData = [
     id: 2,
     title: "Predictive and Generative AI Engineering Services",
     icon: "/Services/icon2.svg",
-    Question:
-      "Need access to Data & AI experts for unlocking hidden insights ?",
+    Question: "Need access to Data & AI experts for unlocking hidden insights?",
     description:
       "Our seasoned team provides comprehensive consulting across various industries, leveraging machine learning and data science for success.",
     benifits: [
       {
         title: "Strategic Guidance : ",
-        subtext: "Chart the right course with data-driven insights",
+        subtext: "Chart the right course with data-driven insights.",
       },
       {
         title: "Actionable Solutions : ",
@@ -48,9 +47,9 @@ export const ServiceData = [
     id: 3,
     title: "Data & AI Partnership/M&A Due diligence",
     icon: "/Services/icon3.svg",
-    Question: "Exploring an AI investment or partnership ?",
+    Question: "Exploring an AI investment or partnership?",
     description:
-      "We help you navigate AI Investments with Precision. With meticulous Due Diligence, our in-depth assessments empower you with the knowledge needed for high-value AI investment and partnership decisions.",
+      "We help you navigate AI Investments with precision. With meticulous Due Diligence, our in-depth assessments empower you with the knowledge needed for high-value AI investment and partnership decisions.",
     benifits: [
       {
         title: "Gain Competitive Edge :  ",
@@ -88,7 +87,7 @@ export const ServiceData = [
       {
         title: "Generate external momentum :",
         subtext:
-          "Showcase your innovation and create market interest.experienced data and AI professionals in India.",
+          " Showcase your innovation and create market interest experienced data and AI professionals in India.",
       },
     ],
   },

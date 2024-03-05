@@ -4,11 +4,15 @@ import { CaseStudyPage } from "../data/CaseStudyPage";
 import SecButton from "../components/SecButton";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
+
 const Casestudy = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <Element className="projects">
       <Container>
-        <div className="container mx-auto mb-20 lg:mt-10">
+        <div className="container mx-auto mb-20 mt-16 lg:mt-10">
           <h1 className="repeat text-center ">Case Study</h1>
           <div className="grid lg:grid-cols-3 gap-16">
             {CaseStudyPage.map((item) => {
@@ -31,9 +35,10 @@ const Casestudy = () => {
                     <div className="mb-5 mt-2">
                       <Link
                         to={item.url}
+                        onClick={scrollToTop}
                         className="font-semibold border-[blue]  shadow-xl "
                       >
-                        <SecButton className="">view</SecButton>
+                        <SecButton className="">Read more</SecButton>
                       </Link>
                     </div>
                   </div>

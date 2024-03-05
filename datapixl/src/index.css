@@ -31,3 +31,16 @@
   color: #3b82f6;
   font-weight: 600;
 }
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/* Apply the animation to the scroll behavior */
+html, body {
+  animation: smoothScroll 0.5s ease-in-out;
+}

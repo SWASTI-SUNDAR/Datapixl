@@ -1,21 +1,19 @@
 import React from "react";
 import { Workshop } from "../data/Workshop";
-import Button from "../components/Button";
 import Meet from "../components/Meet";
-import SecButton from "../components/SecButton";
 import Container from "../components/Container";
 const WhyUs = () => {
   return (
     <Container>
-      <section className="min-h-screen container mx-auto  lg:mt-12 ">
+      <section className="min-h-screen container mx-auto mt-16  lg:mt-12 ">
         <div
-          className={`bg-[url("/Workshop/workshop.svg")] rounded-lg lg:px-32 px-5
-            bg-no-repeat bg-center lg:bg-contain  flex flex-col
-             lg:gap-20 gap-5 min-h-screen  mx-auto`}
+          className={`bg-[url("/Workshop/workshop.svg")] rounded-lg lg:px-32 px-7
+            bg-no-repeat bg-center lg:bg-contain bg-cover  flex flex-col
+             lg:gap-20 gap-12 min-h-screen  mx-auto`}
         >
           <div className="flex text-white  flex-col md:justify-center   ">
-            <h1 className="text-[24px] lg:text-[40px] mt-36  lg:mt-24 font-semibold ">
-              Don’t know where to start ? Discover a free workshop
+            <h1 className="text-[30px] lg:text-[40px] mt-14  lg:mt-24 font-semibold ">
+              Don’t know where to start? Discover a free workshop
             </h1>
             <h1 className="lg:text-[20px] font-medium mt-4 ">
               Our free workshop helps you gain clarity, build a roadmap, and
@@ -30,7 +28,7 @@ const WhyUs = () => {
               {Workshop.map((item) => (
                 <div
                   key={item.id}
-                  className="flex  items-center gap-3 md:gap-5 mt-4"
+                  className="flex  items-center gap-4 md:gap-5 mt-4"
                 >
                   <img
                     src={item.icon}
@@ -53,7 +51,7 @@ const WhyUs = () => {
                 workshop today!
               </span>
             </div>
-            <div className="lg:mt-16 mt-12 mb-3">
+            <div className="lg:mt-16 mt-32 mb-3">
               <Meet />
             </div>
           </div>

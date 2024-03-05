@@ -6,6 +6,9 @@ import SecButton from '../../components/SecButton';
 import { Link } from 'react-router-dom';
 
 const CaseStudy3 = () => {
+   const scrollToTop = () => {
+     window.scrollTo(0, 0);
+   };
   return (
     <div className="">
       <div>
@@ -18,9 +21,11 @@ const CaseStudy3 = () => {
         })}
       </div>
       <Contact />
-      <div className="flex justify-center mb-16 ">
+      <div className="flex justify-center mt-12 mb-16 ">
         <SecButton>
-          <Link to={"/"}>Go back to home</Link>
+          <Link onClick={scrollToTop} to={"/"}>
+            Go back to home
+          </Link>
         </SecButton>
       </div>
     </div>
