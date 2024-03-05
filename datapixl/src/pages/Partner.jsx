@@ -6,19 +6,21 @@ import Container from "../components/Container";
 const Partner = () => {
   return (
     <Container>
-      <section className="min-h-screen max-w-[1330px] mx-auto  flex flex-col gap-16 lg:px-32">
+      <section className="min-h-screen max-w-[1330px] mx-auto  flex flex-col gap-16 ">
         <div className="flex flex-col gap-3">
-          <h1 className="lg:text-[40px] text-xl text-primary font-semibold ">
+          <h1 className="lg:text-[40px] text-center text-xl text-primary font-semibold ">
             Why Partner with Datapixl for Your AI Journey?
           </h1>
-          <div>
-            <span className="lg:text-[20px]  text-lg font-normal ">
-              Unlocking the power of AI shouldn't be complex or costly. <br />
-            </span>
-            <span className="lg:text-[20px] text-lg font-normal">
-              At Datapixl, we simplify your AI journey:
-            </span>
-          </div>
+          {
+            //   <div>
+            //   <span className="lg:text-[20px]  text-lg font-normal ">
+            //     Unlocking the power of AI shouldn't be complex or costly. <br />
+            //   </span>
+            //   <span className="lg:text-[20px] text-lg font-normal">
+            //     At Datapixl, we simplify your AI journey:
+            //   </span>
+            // </div>
+          }
         </div>
         <div className="grid lg:grid-cols-2 grid-col-1 gap-16">
           {PartnerData.map((data) => {
@@ -42,8 +44,8 @@ const Partner = () => {
             />
           )}
         </div>
-        <div className="text-tertiary text-[20px] flex flex-col gap-1 ">
-          <span>
+        <div className="text-tertiary  lg:text-[20px] flex flex-col gap-4 ">
+          <span className="">
             Datapixl is your one-stop shop for all your AI needs. We empower you
             to unlock the full potential of AI and achieve your strategic goals.
           </span>

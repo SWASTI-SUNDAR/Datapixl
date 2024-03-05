@@ -2,7 +2,7 @@ export const ServiceData = [
   {
     id: 1,
     title: "Data & AI Strategy",
-    icon: "/Services/icon.svg",
+    icon: "/Services/icon1.svg",
     Question: "Need expert guidance coupled with seamless Integration ?",
     description:
       "Unlock the transformative potential of AI regardless of your stage. We offer tailored workshops and ongoing advisory support, guiding you from initial concept to real-world implementation.",
@@ -24,7 +24,7 @@ export const ServiceData = [
   {
     id: 2,
     title: "Predictive and Generative AI Engineering Services",
-    icon: "/Services/icon.svg",
+    icon: "/Services/icon2.svg",
     Question:
       "Need access to Data & AI experts for unlocking hidden insights ?",
     description:
@@ -47,7 +47,7 @@ export const ServiceData = [
   {
     id: 3,
     title: "Data & AI Partnership/M&A Due diligence",
-    icon: "/Services/icon.svg",
+    icon: "/Services/icon3.svg",
     Question: "Exploring an AI investment or partnership ?",
     description:
       "We help you navigate AI Investments with Precision. With meticulous Due Diligence, our in-depth assessments empower you with the knowledge needed for high-value AI investment and partnership decisions.",
@@ -71,7 +71,7 @@ export const ServiceData = [
   {
     id: 4,
     title: "AI innovation proof of concept implementation",
-    icon: "/Services/icon.svg",
+    icon: "/Services/icon4.svg",
     Question: "Need a quick proof-of-concept for your AI idea?",
     description:
       "We help you create end-to-end working demos showcasing the power of Data & AI to solve real business problems. These demos validate your AI use case and secure stakeholder buy-in for internal investment or generate market buzz externally.",

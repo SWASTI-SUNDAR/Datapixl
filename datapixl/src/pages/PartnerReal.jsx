@@ -5,7 +5,7 @@ import Container from "../components/Container";
 const PartnerReal = () => {
   return (
     <Container>
-      <div className="container max-w-[1330px] mx-auto  mt-20 px-6 min-h-screen ">
+      <div className="container max-w-[1330px] mx-auto  mt-20 px-6  ">
         <h1 className="text-center text-2xl lg:text-[40px]  font-semibold text-primary  mt-5 text-md ">
           Unlock AI Success Together
         </h1>
@@ -13,19 +13,21 @@ const PartnerReal = () => {
           Empower your clients and grow your business through strategic AI
           partnerships.
         </h1>
-        <div className="flex flex-col">
-          {RealPartnerData.map((item) => {
+        <div className="flex bg-blac flex-col lg:flex-row justify-center items-center">
+          {RealPartnerData.map((item, index) => {
             return (
               <div
-                key={item.id}
-                className="flex md:flex-row flex-col justify-center items-center "
+                key={index}
+                className="flex justify-center w-full items-center flex-col "
               >
-                <div className="w-full">
-                  <img className="" src={item.icon} alt="" />
+                <div className="flex">
+                  <img src={item.icon} className="lg:p-10 h-[400px]" alt="" />
                 </div>
-                <div className="flex flex-col p-10 md:p-10 md:justify-start items- md:items-start justify-center w-full bg-blck md:gap-9">
-                  <h1 className=" text-[32px] font-medium  ">{item.title}</h1>
-                  <p className="font-normal leading-8 md:text-[20px]  text-[#343434] ">
+                <div className="flex justify-center lg:items-center flex-col ">
+                  <h1 className="lg:text-[32px] text-[20px] font-semibold ">
+                    {item.title}
+                  </h1>
+                  <p className="lg:mt-3 font-normal text-[16px] lg:text-[20px]">
                     {item.desc}
                   </p>
                 </div>

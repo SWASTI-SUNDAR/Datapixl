@@ -8,20 +8,31 @@ const Casestudy = () => {
   return (
     <Element className="projects">
       <Container>
-        <div className="container mx-auto  px-5 mb-20 mt-10">
+        <div className="container mx-auto mb-20 lg:mt-10">
           <h1 className="repeat text-center ">Case Study</h1>
           <div className="grid lg:grid-cols-3 gap-16">
             {CaseStudyPage.map((item) => {
               return (
                 <div
                   key={item.id}
-                  className="mt-12 border rounded-xl flex flex-col gap-5 justify-center items-center"
+                  className="mt-12 border shadow-md rounded-xl flex flex-col gap-5 justify-center items-center"
                 >
-                  <img src={item.icon} className="w-full" alt="" />
+                  <div className="flex w-full h-full ">
+                    <img
+                      src={item.icon}
+                      className="w-full h-full object-center object-cover rounded-t-xl"
+                      alt=""
+                    />
+                  </div>
                   <div className="flex flex-col justify-center items-center gap-2 ">
-                    <p className="mx-4">{item.text}</p>
-                    <div className="mb-5">
-                      <Link to={item.url} className="font-semibold ">
+                    <p className="mx-4 text-[20px] text-center font-semibold ">
+                      {item.text}
+                    </p>
+                    <div className="mb-5 mt-2">
+                      <Link
+                        to={item.url}
+                        className="font-semibold border-[blue]  shadow-xl "
+                      >
                         <SecButton className="">view</SecButton>
                       </Link>
                     </div>

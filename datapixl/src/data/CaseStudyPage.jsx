@@ -8,7 +8,7 @@ export const CaseStudyPage = [
   {
     id: 2,
     url: "/casestudy-2",
-    icon: "/Casestudy/casestudy3.svg",
+    icon: "/Casestudy/casestudy2.svg",
     text: "We make a Generative AI use case study of this",
   },
   {

@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const SecButton = ({ onClick, children, px = 4, py = 2 }) => {
+const SecButton = ({ onClick, children }) => {
   return (
     <motion.button
-      className={`px-${px} py-${py} border  text-primary font-semibold bg-white rounded-md focus:outline-none focus:ring`}
+      className={`px-8 py-2 border-[blue] border-[2px]  text-primary font-semibold bg-white rounded-md focus:outline-none focus:ring`}
       type="button"
       whileHover={{
         scale: 1.05,

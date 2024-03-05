@@ -5,10 +5,10 @@ const PartnerCard = ({ data, id }) => {
     <div
       className={`${
         data.id == 3 ? "md:w-[50%] mx-auto" : ""
-      } border-primary rounded-xl border-[3px] flex justify-center items-center gap-10 p-5 `}
+      } border-primary rounded-xl border-[3px] flex justify-center items-center gap-5 p-5 `}
     >
       <div>
-        <img className="w-24 h-24" src={data.icon} alt="" />
+        <img className="lg:w-24 lg:h-24 size-48 " src={data.icon} alt="" />
       </div>
       <div className="flex flex-col">
         <span className="text-primary font-semibold text-[20px]">

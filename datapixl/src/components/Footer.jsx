@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 import { FooterData } from "../data/FooterData";
 const Footer = () => {
   return (
-    <div className="border">
+    <div className=" bg-gradient-to-b from-[#f8f8f8] to-transparent relative overflow-hidden border-2">
       <Container>
         <div className="flex flex-col lg:flex-row justify-start lg:justify-center">
           {FooterrData.map((item) => {

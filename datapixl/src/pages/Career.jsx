@@ -1,6 +1,7 @@
 import React from "react";
 import SecButton from "../components/SecButton";
 import Container from "../components/Container";
+import { Link } from "react-scroll";
 
 const Career = () => {
   return (
@@ -18,7 +19,18 @@ const Career = () => {
             Take the first step towards an exciting career in AI innovation.{" "}
           </span>
           <div className="pb-5">
-            <SecButton>Join our team</SecButton>
+            <SecButton>
+              <Link
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                to="contact"
+              >
+                Join our team
+              </Link>
+            </SecButton>
           </div>
         </div>
       </div>
