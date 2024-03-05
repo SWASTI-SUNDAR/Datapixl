@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const Projects = () => {
-  return (
-    <div>
-      projects page
-    </div>
-  )
-}
+  return <section id="/projects">projects page</section>;
+};
 
-export default Projects
+export default Projects;

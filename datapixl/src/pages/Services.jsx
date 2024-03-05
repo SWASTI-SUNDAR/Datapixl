@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
+import { ServiceData } from "../data/ServiceData";
+import { Card } from "../components/ServiceCard";
 
-const Services = () => {
+function Services() {
+  const [expandedCard, setExpandedCard] = useState(null);
+
   return (
-    <div id="service" className="min-h-screen flex items-center w-96 mx-auto ">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eaque
-      odit ab cum laboriosam sit quo! Hic natus labore vel at. Nisi sequi nemo
-      quam aut amet repudiandae sit pariatur quod! Error, laborum.
-    </div>
+    <section
+      id="services"
+      className="min-h-screen  container px-14 lg:px-32 mx-auto "
+    >
+      <h1 className=" text-center text-[40px] font-semibold mt-12 mb-12">
+        What We Do?
+      </h1>
+      <div className="grid lg:grid-cols-2 gap-16 ">
+        {ServiceData?.map((item) => (
+          <Card
+            key={item.id}
+            data={item}
+            expandedCard={expandedCard}
+            setExpandedCard={setExpandedCard}
+          />
+        ))}
+      </div>
+    </section>
   );
-};
+}
 
 export default Services;
