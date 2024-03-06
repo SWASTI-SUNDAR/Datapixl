@@ -18,18 +18,22 @@ const PartnerReal = () => {
             return (
               <div
                 key={index}
-                className="flex justify-center w-full items-center flex-col "
+                className="flex justify-center w-full p-5 items-center flex-col "
               >
-                <div className="flex">
-                  <img src={item.icon} className="lg:p-10 h-[400px]" alt="" />
+                <div className="flex justify-center ">
+                  <img
+                    src={item.icon}
+                    className="lg:p-10  object-center md:max-w-[450px] max-w-full rounded-xl lg:max-w-[450px] bordeer  lg:max-h-[300px]"
+                    alt=""
+                  />
                 </div>
-                <div className="flex justify-center lg:items-center flex-col ">
+                <div className="flex justify-center mt-2 lg:mt-0 lg:items-center flex-col ">
                   <h1 className="lg:text-[32px] text-[20px] font-semibold ">
                     {item.title}
                   </h1>
-                  <p className="lg:mt-3 font-normal text-[16px] lg:text-[20px]">
+                  <h1 className="lg:mt-3  lg:text-center font-normal text-[16px] lg:text-[24px]">
                     {item.desc}
-                  </p>
+                  </h1>
                 </div>
               </div>
             );

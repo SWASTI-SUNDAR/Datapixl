@@ -2,19 +2,19 @@ export const CaseStudyPage = [
   {
     id: 1,
     url: "/casestudy-1",
-    icon: "/Casestudy/casestudy1.svg",
-    text: "We make an AI & data strategy case study out of this",
+    icon: "/Casestudy/casestudy1.png",
+    text: "Datapixl Propels client to AI Leadership",
   },
   {
     id: 2,
     url: "/casestudy-2",
-    icon: "/Casestudy/casestudy2.svg",
-    text: "We make a Generative AI use case study",
+    icon: "/Casestudy/casestudy2.png",
+    text: "Datapixl Empowers Client with Generative AI",
   },
   {
     id: 3,
     url: "/casestudy-3",
-    icon: "/Casestudy/casestudy3.svg",
-    text: "Data Science and Engineering Implementation Services",
+    icon: "/Casestudy/casestudy3.png",
+    text: "Datapixl Fast-Tracks AI Implementation for client",
   },
 ];

@@ -1,7 +1,7 @@
 export const CaseStudyPAge1 = [
   {
     id: 1,
-    image: "/Casestudy/Case1.svg",
+    image: "/Casestudy/case1.jpg",
     heading: "Datapixl Propels client to AI Leadership",
     title:
       "Facing an AI-driven market, the client lacked internal expertise to compete They partnered with Datapixl for comprehensive Data & AI advisory",
@@ -49,7 +49,7 @@ export const CaseStudyPAge2 = [
     id: 2,
     title: "Datapixl Empowers Client with Generative AI",
     heading: "Datapixl Empowers Client with Generative AI",
-    image: "/Casestudy/Case2.svg",
+    image: "/Casestudy/case2.png",
     text: "Facing a growing need and mandate for Generative AI, Client lacked the expertise to develop and implement solutions",
     Ourapproach: [
       {
@@ -75,7 +75,7 @@ export const CaseStudyPAge3 = [
     id: 3,
     title: "Datapixl Fast-Tracks AI Implementation for client",
     heading: "Datapixl Fast-Tracks AI Implementation for client",
-    image: "/Casestudy/Case3.svg",
+    image: "/Casestudy/case3.png",
     text: "Client wanted to leverage AI but lacked in-house expertise and faced internal barriers hindering progress.",
     Ourapproach: [
       {

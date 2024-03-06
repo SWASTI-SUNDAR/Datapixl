@@ -123,7 +123,7 @@ const Navbar = () => {
                             spy={true}
                             smooth={true}
                             offset={-100}
-                            duration={500}
+                            duration={item.id > 2 ? 1000 : 500}
                             to={item.path}
                           >
                             <span

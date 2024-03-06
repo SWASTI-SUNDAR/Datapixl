@@ -16,7 +16,7 @@ function App() {
       <div className="overflow-hidden">
         <Navbar />
         <Routes>
-          <Route exact path="/" element={<Layout />} />
+          <Route path="/" element={<Layout />} />
           <Route path="/casestudy-1" element={<Casestudy1 />} />
           <Route path="/casestudy-2" element={<Casestudy2 />} />
           <Route path="/casestudy-3" element={<CaseStudy3 />} />

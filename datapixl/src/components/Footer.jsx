@@ -4,14 +4,14 @@ import { Link } from "react-scroll";
 import { FooterData } from "../data/FooterData";
 const Footer = () => {
   return (
-    <div className=" bg-gradient-to-b from-[#f8f8f8] to-transparent relative overflow-hidden border-2">
+    <div className=" bg-gradient-to-b from-[#f8f8f8] to-transparent relative overflow-hidden mt-12 border-t-2">
       <Container>
         <div className="flex flex-col lg:flex-row justify-start lg:justify-center">
           {FooterrData.map((item) => {
             return (
               <div
                 key={item.id}
-                className="flex  items-center mt-3 pb-2 gap-5 lg:p-5"
+                className="flex flex-col lg:items-center mt-3 pb-2  lg:p-5"
               >
                 <Link
                   activeClass="active"
@@ -21,20 +21,23 @@ const Footer = () => {
                   duration={500}
                   // onSetActive={handleSetActive}
                   to={item.link}
-                  className="text-primary font-semibold lg:text-[20px] "
+                  className="text-black  font-semibold lg:text-[20px] "
                 >
                   {item.title}
                 </Link>
+                <span className=" flex lg:hidden bg-black ">
+                
+                </span>
               </div>
             );
           })}
         </div>
         <div>
           {
-            <div className="flex flex-col lg:flex-row  items-center gap-5 p-5">
+            <div className="flex flex-col mt-2 lg:flex-row justify-center lg:items-center gap-5 lg:p-5">
               {FooterData.map((data, index) => {
                 return (
-                  <div key={index} className="flex items-center gap-5 p-5">
+                  <div key={index} className="flex lg:items-center gap-3 lg:gap-5 lg:p-5">
                     <img src={data.icon} className="  " alt="icon" />
 
                     <div className="">

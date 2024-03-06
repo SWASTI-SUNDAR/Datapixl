@@ -2,7 +2,7 @@ export const Workshop = [
   {
     id: 1,
     title: "Expert guidance to understand your unique business challenges",
-    icon: "/Workshop/icon1.svg",
+    icon: "/Workshop/icon3.svg",
   },
   {
     id: 2,

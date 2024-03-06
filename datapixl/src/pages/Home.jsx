@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "../components/Button";
 import SecButton from "../components/SecButton";
+import { Link } from "react-scroll";
 const Home = () => {
   return (
     <>
       <section
-        className={` bg-[url(Home/background.svg)]
+        className={`bg-[url("Home/background.svg")]
          mx-auto min-h-screen bg-cover bg-center 
          justify-center items-center  w-full
         bg-opacity-50 min-w-screen overflow-hidden flex flex-col`}
@@ -25,8 +26,25 @@ const Home = () => {
           </div>
         </div>
         <div className="mt-10 flex lg:flex-row flex-col justify-start lg:justify-center gap-16">
-          <Button>Book free consultation</Button>
-          <SecButton>Learn more</SecButton>
+          <Link
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            to="workshop"
+          >
+            <Button>Book free consultation</Button>
+          </Link>
+
+          <Link
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+            to="services"
+          >
+            <SecButton>Learn more</SecButton>
+          </Link>
         </div>
       </section>
     </>
