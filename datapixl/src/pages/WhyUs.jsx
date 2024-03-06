@@ -7,16 +7,16 @@ const WhyUs = () => {
     <Container>
       <section className="min-h-screen container mx-auto mt-16  lg:mt-12 ">
         <div
-          className={`bg-[url("/Workshop/workshop.svg")] rounded-lg lg:px-32 px-7
+          className={`bg-[url("/Workshop/workshop.webp")] rounded-lg lg:px-32 px-7
             bg-no-repeat bg-center lg:bgcontain bg-cover  flex flex-col
              lg:gap-20 gap-12 min-h-scree  mx-auto`}
         >
           <div className="flex text-white  flex-col md:justify-center   ">
             <h1 className="text-[30px] lg:text-[40px] mt-14  lg:mt-24 font-semibold ">
-              Don’t know where to start? Discover a free workshop
+              Don’t know where to start? Book a free discovery workshop with us.
             </h1>
             <h1 className="lg:text-[20px] font-medium mt-4 ">
-              Our free workshop helps you gain clarity, build a roadmap, and
+              Our free workshop helps you gain clarity, build a roadmap and
               unlock growth.
             </h1>
           </div>

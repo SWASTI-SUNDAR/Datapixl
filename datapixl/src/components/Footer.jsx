@@ -78,14 +78,14 @@ const FooterrData = [
     link: "projects",
   },
   {
-    id: 3,
-    title: "Career",
-    link: "career",
-  },
-  {
     id: 4,
     title: "Partner",
     link: "partners",
+  },
+  {
+    id: 3,
+    title: "Career",
+    link: "career",
   },
   {
     id: 5,

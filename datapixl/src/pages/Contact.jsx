@@ -57,13 +57,13 @@ const Contact = () => {
       <div className="min-h-screen overflow-hidden mt-16">
         <h1 className="repeat text-center ">Contact Us</h1>
         <h1 className="text-center text-[20px] mt-4 ">
-          Have questions, inquiries, or ideas? Let's start a conversation and
-          explore how we can assist you.
+          Have questions or ideas? Let's start a conversation and
+          explore how can we collaborate.
         </h1>
 
         <div className="flex mt-12 max-w-[1330px] lg:max-h-screen  flex-col-reverse lg:flex-row gap-5 lg:gap-0 mx-auto  ">
           <div
-            className={`lg:w-full rounded-lg  bg-[url("/Contact/Contact.svg")] bg-cover bg-no-repeat bg-center flex flex-col p-5 justify-center items-center`}
+            className={`lg:w-full rounded-lg  bg-[url("/Contact/Contact.webp")] bg-cover bg-no-repeat bg-center flex flex-col p-5 justify-center items-center`}
           >
             <h1 className="font-semibold text-cente  text-2xl lg:text-[26px] mt-1 text-white ">
               Let's discuss how we can support your AI goals

@@ -107,16 +107,16 @@ const Navbar = () => {
         </div>
 
         <div className="">
-          <div className="lg:hidden flex flex-col justify-center items-center ">
+          <div className="lg:hidden -mt-4 flex flex-col justify-center items-center ">
             {show && (
               <>
                 {/* Apply backdrop blur effect */}
-                <div className="backdrop-filter backdrop-blur-lg">
+                <div className="bg-white">
                   <div
                     onClick={() => {
                       setShow(!show);
                     }}
-                    className="flex flex-col justify-center  items-center h-[90vh] w-screen gap-10"
+                    className="flex flex-col justify-center  items-center h-screen w-screen gap-10"
                   >
                     {NavbarData.map((item, index) => {
                       return (
@@ -132,7 +132,7 @@ const Navbar = () => {
                             to={item.path}
                           >
                             <span
-                              className={` text-${navColor} font-semibold text-3xl`}
+                              className={` text-black font-semibold text-3xl`}
                             >
                               {item.title}
                             </span>

@@ -51,7 +51,7 @@ const About = () => {
           </div>
           <div className="flex justify-center items-center mt-12 lg:mt-0 ">
             <img
-              src="/About/aboutimg.jpg"
+              src="/About/aboutimg.webp"
               className="object-contain   lg:p-0 mdp-0 rounded-lg md:object-cover lg:object-cover lg:w-[388px] lg:h-[388px]"
               alt=""
             />

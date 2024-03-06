@@ -3,7 +3,7 @@ export const ServiceData = [
     id: 1,
     title: "Data & AI Strategy",
     icon: "/Services/icon1.svg",
-    Question: "Need expert guidance coupled with seamless integration?",
+    Question: "Need expert guidance coupled with seamless implementation?",
     description:
       "Unlock the transformative potential of AI regardless of your stage. We offer tailored workshops and ongoing advisory support, guiding you from initial concept to real-world implementation.",
     benifits: [

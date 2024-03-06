@@ -1,7 +1,7 @@
 export const CaseStudyPAge1 = [
   {
     id: 1,
-    image: "/Casestudy/case1.jpg",
+    image: "/Casestudy/case1.webp",
     heading: "Datapixl Propels client to AI Leadership",
     title:
       "Facing an AI-driven market, the client lacked internal expertise to compete. They partnered with Datapixl for comprehensive Data & AI advisory.",
@@ -9,10 +9,10 @@ export const CaseStudyPAge1 = [
     Ourapproach: [
       {
         title: "Cross-Company AI Strategy:",
-        text: " Defined data, use cases, platform, and talent needs.",
+        text: "Defined data, use cases, platform, and talent needs.",
       },
       {
-        title: "Data Strategy::",
+        title: "Data Strategy:",
         text: "Established an enterprise-wide approach to data architecture, contracts, and regulations.",
       },
       {
@@ -39,7 +39,7 @@ export const CaseStudyPAge1 = [
       },
       {
         title: "Unified Architecture:",
-        text: " A common technical framework was agreed upon with engineering and product teams.",
+        text: "A common technical framework was agreed upon with engineering and product teams.",
       },
     ],
   },
@@ -49,16 +49,16 @@ export const CaseStudyPAge2 = [
     id: 2,
     title: "Datapixl Empowers Client with Generative AI",
     heading: "Datapixl Empowers Client with Generative AI",
-    image: "/Casestudy/case2.png",
+    image: "/Casestudy/case2.webp",
     text: "Facing a growing need and mandate for Generative AI, Client lacked the expertise to develop and implement solutions",
     Ourapproach: [
       {
-        title: "Gen-AI Slack bot",
-        text: "Automates 60% of IT support requests, integrating with existing knowledge sources.",
+        title: "Gen-AI Slack bot:",
+        text: "Automated 60% of IT support requests, integrating with existing knowledge sources.",
       },
       {
-        title: "Anomaly detection & explanation",
-        text: "Uses AI to identify and explain anomalies, generating new revenue.",
+        title: "Anomaly detection & explanation:",
+        text: "Used Predictive AI to identify anomalies in the client's platform usage and leveraged Generative AI to explain the reasons why those data points were identified as anomalies.",
       },
     ],
     result: [
@@ -75,29 +75,29 @@ export const CaseStudyPAge3 = [
     id: 3,
     title: "Datapixl Fast-Tracks AI Implementation for client",
     heading: "Datapixl Fast-Tracks AI Implementation for client",
-    image: "/Casestudy/case3.png",
+    image: "/Casestudy/case3.webp",
     text: "Client wanted to leverage AI but lacked in-house expertise and faced internal barriers hindering progress.",
     Ourapproach: [
       {
         title: "Rapid Prototyping:",
-        text: "  Datapixl delivered compliant AI models and pipelines for prioritized use cases.",
+        text: "Datapixl delivered compliant AI models and pipelines for prioritized use cases.",
       },
       {
         title: "SaaS Application Development:",
-        text: " We built an end-to-end SaaS application powered by AI for their customers.",
+        text: "We built an end-to-end SaaS application powered by AI for their customers.",
       },
       {
         title: "Offshore AI Team:",
-        text: " We established a dedicated team in India for ongoing development and management.",
+        text: "We established a dedicated team in India for ongoing development and management.",
       },
     ],
     result: [
       {
-        title: "3 Successful PoCs: ",
+        title: "3 Successful PoCs:",
         text: "Secured contract renewals and upsells through rapid PoCs.",
       },
       {
-        title: "Joint AI Roadmap: ",
+        title: "Joint AI Roadmap:",
         text: "Collaborated with SAP to integrate new AI features into the channel sales process.",
       },
     ],

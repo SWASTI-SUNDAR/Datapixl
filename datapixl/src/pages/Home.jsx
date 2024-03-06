@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../components/Button";
 import SecButton from "../components/SecButton";
 import { Link } from "react-scroll";
-import background from "../assets/background.png";
+import background from "../assets/background.webp";
 const Home = () => {
   return (
     <>
@@ -33,7 +33,7 @@ const Home = () => {
             </h1>
           </div>
         </div>
-        <div className="mt-10 flex lg:flex-row flex-col justify-start lg:justify-center gap-16">
+        <div className="mt-10 flex lg:flex-row flex-col justify-center items-center lg:justify-center gap-8">
           <Link
             spy={true}
             smooth={true}
@@ -41,7 +41,11 @@ const Home = () => {
             duration={500}
             to="workshop"
           >
-            <Button>Book free consultation</Button>
+            <Button>
+              <span className="font-semibold text-[20px] ">
+                Book free consultation
+              </span>
+            </Button>
           </Link>
 
           <Link
@@ -52,7 +56,7 @@ const Home = () => {
             to="services"
           >
             <SecButton>
-              <span className="text-xl">Learn more</span>
+              <span className="font-semiboldtext-[20px]  ">Learn more</span>
             </SecButton>
           </Link>
         </div>

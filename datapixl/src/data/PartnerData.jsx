@@ -2,7 +2,7 @@ export const PartnerData = [
   {
     id: 1,
     icon: "/Partner/icon1.svg",
-    title: "Expert AI Strategy & Delivery: ",
+    title: "Expert AI strategy & delivery: ",
     description:
       "We combine deep AI knowledge with a proven track record to deliver scalable AI solutions tailored to your business",
   },
@@ -17,7 +17,7 @@ export const PartnerData = [
 export const extraData = {
   id: 3,
   icon: "/Partner/icon3.svg",
-  title: "AI Innovation Lab: ",
+  title: "AI innovation lab: ",
   description:
     "Leverage our AI innovation lab to experiment, prototype and scale AI solutions",
 };
