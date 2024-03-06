@@ -55,10 +55,10 @@ const Contact = () => {
   return (
     <Container className="">
       <div className="min-h-screen overflow-hidden mt-16">
-        <h1 className="repeat text-center ">Contact Us</h1>
+        <h1 className="repeat text-center text-[36px] ">Contact Us</h1>
         <h1 className="text-center text-[20px] mt-4 ">
-          Have questions or ideas? Let's start a conversation and
-          explore how can we collaborate.
+          Have questions or ideas? Let's start a conversation and explore how
+          can we collaborate.
         </h1>
 
         <div className="flex mt-12 max-w-[1330px] lg:max-h-screen  flex-col-reverse lg:flex-row gap-5 lg:gap-0 mx-auto  ">

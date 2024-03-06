@@ -30,9 +30,10 @@ const Footer = () => {
             );
           })}
         </div>
+        
         <div>
           {
-            <div className="flex flex-col mt-2 lg:flex-row justify-center lg:items-center gap-5 lg:p-5">
+            <div className="flex flex-col mt-10 lg:flex-row justify-center lg:items-center gap-5 lg:p-5">
               {FooterData.map((data, index) => {
                 return (
                   <div
@@ -46,7 +47,7 @@ const Footer = () => {
                     />
 
                     <div className="">
-                      <h1 className="text-[black]">{data.description}</h1>
+                      <h1 className="text-[black] font-semibold ">{data.description}</h1>
                     </div>
                   </div>
                 );
@@ -69,27 +70,27 @@ export default Footer;
 const FooterrData = [
   {
     id: 1,
-    title: "Service",
-    link: "services",
+    title: "About",
+    path: "about",
   },
   {
     id: 2,
-    title: "Case Study",
-    link: "projects",
-  },
-  {
-    id: 4,
-    title: "Partner",
-    link: "partners",
+    title: "Services",
+    path: "services",
   },
   {
     id: 3,
-    title: "Career",
-    link: "career",
+    title: "Case Studies",
+    path: "projects",
   },
   {
     id: 5,
-    title: "Contact us",
-    link: "contact",
+    title: "Partner with us",
+    path: "partners",
+  },
+  {
+    id: 4,
+    title: "Careers",
+    path: "career",
   },
 ];

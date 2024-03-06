@@ -5,12 +5,13 @@ import Container from "../components/Container";
 const PartnerReal = () => {
   return (
     <Container>
-      <div className="container max-w-[1330px] mx-auto  mt-20 px-6  ">
-        <h1 className="text-center text-2xl lg:text-[40px]  font-semibold text-primary  mt-5 text-md ">
+      <div className="container max-w-[1330px] mx-auto  px-6 mt-16 ">
+        <h1 className="text-center text-[36px] lg:text-[40px]  font-semibold text-primary  mt-5 text-md ">
           Unlock AI success together
         </h1>
         <h1 className="text-center mt-5 mb-8 lg:text-[20px] ">
-          Empower your clients and grow your business through strategic partnership with Datapixl.
+          Empower your clients and grow your business through strategic
+          partnership with Datapixl
         </h1>
         <div className="flex bg-blac flex-col lg:flex-row gap-10 justify-center items-center">
           {RealPartnerData.map((item, index) => {

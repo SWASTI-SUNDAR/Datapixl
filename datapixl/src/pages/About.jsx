@@ -6,7 +6,7 @@ const About = () => {
   return (
     <Container>
       <div className="min-h-screen container mx-auto mb-5 p-2 ">
-        <h1 className="text-center mt-12 lg:mt-20 lg:mb-12 font-semibold text-secondary text-[26px] lg:text-[40px] ">
+        <h1 className="text-center mt-12 lg:mt-20 lg:mb-12 font-semibold text-secondary text-[36px] lg:text-[40px] ">
           Your AI growth partner
         </h1>
         <div className="flex gap-3 lg:gap-16 flex-col-reverse lg:flex-row ">

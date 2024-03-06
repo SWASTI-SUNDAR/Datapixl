@@ -56,7 +56,7 @@ const Home = () => {
             to="services"
           >
             <SecButton>
-              <span className="font-semiboldtext-[20px]  ">Learn more</span>
+              <span className="font-semibold text-[20px]  ">Learn more</span>
             </SecButton>
           </Link>
         </div>

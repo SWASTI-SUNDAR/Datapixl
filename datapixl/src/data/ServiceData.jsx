@@ -23,7 +23,7 @@ export const ServiceData = [
   },
   {
     id: 2,
-    title: "Predictive and Generative AI Engineering Services",
+    title: "Predictive & Gen AI Engineering Services",
     icon: "/Services/icon2.svg",
     Question: "Need access to Data & AI experts for unlocking hidden insights?",
     description:
@@ -45,7 +45,7 @@ export const ServiceData = [
   },
   {
     id: 3,
-    title: "Data & AI Partnership/M&A Due diligence",
+    title: "Data & AI Partnership/M&A Due Diligence",
     icon: "/Services/icon3.svg",
     Question: "Exploring an AI investment or partnership?",
     description:
@@ -69,7 +69,7 @@ export const ServiceData = [
   },
   {
     id: 4,
-    title: "AI innovation proof of concept implementation",
+    title: "AI Innovation Proof of Concept Implementation",
     icon: "/Services/icon4.svg",
     Question: "Need a quick proof-of-concept for your AI idea?",
     description:
