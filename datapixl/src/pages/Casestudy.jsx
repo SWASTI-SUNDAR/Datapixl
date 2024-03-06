@@ -12,7 +12,7 @@ const Casestudy = () => {
   return (
     <Element className="projects">
       <Container>
-        <div className="container mx-auto mb-20 lg:mt-10">
+        <div className="container mx-auto mb-20 mt-10 lg:mt-10">
           <h1 className="repeat text-[36px] text-center lg:mb-5 ">
             Case Studies
           </h1>
