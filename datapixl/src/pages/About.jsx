@@ -12,14 +12,14 @@ const About = () => {
         <div className="flex gap-3 lg:gap-16 flex-col-reverse lg:flex-row ">
           <div className="flex-1">
             <div className="flex flex-col gap-4 lg:gap-10">
-              <span className="font-medium text-xl leading-8 lg:text-[20px] text-[#0A0A0A]">
+              <span className="font-normal text-xl leading-8 lg:text-[20px] text-[#0A0A0A]">
                 We're a team of strategists, data scientists and engineers who
                 unlock data's transformative power through predictive and
                 generative AI to solve your critical business challenges
               </span>
 
-              <div className="flex flex-col gap-5">
-                <span className="text-[#00153E] font-medium text-[24px] ">
+              <div className="flex flex-col lg:gap-5">
+                <span className="text-[#0A0A0A] font-medium text-[20px] ">
                   We empower you to:
                 </span>
                 {AboutData.map((data, index) => {

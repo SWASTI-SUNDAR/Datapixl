@@ -9,7 +9,7 @@ const PartnerReal = () => {
         <h1 className="text-center text-[36px] lg:text-[40px]  font-semibold text-primary  mt-5 text-md ">
           Unlock AI success together
         </h1>
-        <h1 className="text-center mt-5 mb-8 lg:text-[20px] ">
+        <h1 className="text-center text-[20px] mt-5 mb-8 lg:text-[20px] ">
           Empower your clients and grow your business through strategic
           partnership with Datapixl
         </h1>

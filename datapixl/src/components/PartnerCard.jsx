@@ -7,14 +7,14 @@ const PartnerCard = ({ data, id }) => {
         data.id == 3 ? "lg:w-[50%] mx-auto" : ""
       } border-primary rounded-xl border-[3px] flex justify-center items-center gap-5 p-5 `}
     >
-      <div>
-        <img className="lg:w-24 lg:h-24 size-48 " src={data.icon} alt="" />
+      <div className={`${data.id==3?"w-24 lg:w-[70px] ":""} ${data.id==1?"lg:w-28 w-32":""}`}>
+        <img className="lg:w-24 lg:h-24 h-32 bg-center bg-cover " src={data.icon} alt="" />
       </div>
       <div className="flex flex-col">
         <span className="text-primary font-semibold text-[20px]">
           {data.title}
         </span>
-        <span className="text-tertiary">{data.description}</span>
+        <span className="text-tertiary text-[16px] ">{data.description}</span>
       </div>
     </div>
   );

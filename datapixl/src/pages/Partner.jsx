@@ -45,7 +45,7 @@ const Partner = () => {
           )}
         </div>
         <div className="text-tertiary  lg:text-[20px] flex flex-col gap-4 ">
-          <span className="">
+          <span className="text-[16px]">
             Datapixl is your one-stop shop for all your AI needs. We empower you
             to unlock the full potential of AI and achieve your strategic goals.
           </span>

@@ -40,7 +40,7 @@ const Casestudy = () => {
                         onClick={scrollToTop}
                         className="font-semibold border-[blue]  shadow-xl "
                       >
-                        <SecButton className="">Read more</SecButton>
+                        <SecButton className="text-[16px]">Read more</SecButton>
                       </Link>
                     </div>
                   </div>

@@ -15,7 +15,7 @@ export function Card({ data, expandedCard, setExpandedCard }) {
     <div className="card flex pl-5 pr-5 pt-8 pb-8 flex-col border-[3px] rounded-lg border-primary shadow-xl gap-5 justify-center items-center">
       <img src={data.icon} className="w-12 h-12" alt={data.title} />
       <h1 className="text-[24px] text-center font-medium  ">{data.title}</h1>
-      <span className="text-secondary lg:text-[20px] text-[14px] font-medium leading-7 ">
+      <span className="text-secondary lg:text-[20px] text-[20px] font-medium leading-7 ">
         {data?.Question}
       </span>
       <span className="  text-[16px] font-medium leading-7 ">

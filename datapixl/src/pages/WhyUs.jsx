@@ -15,7 +15,7 @@ const WhyUs = () => {
             <h1 className="text-[30px] lg:text-[40px] mt-14  lg:mt-24 font-semibold ">
               Don’t know where to start? Book a free discovery workshop with us.
             </h1>
-            <h1 className="lg:text-[20px] font-medium mt-4 ">
+            <h1 className="lg:text-[20px] text-[16px] font-medium mt-4 ">
               Our free workshop helps you gain clarity, build a roadmap and
               unlock growth.
             </h1>
