@@ -6,10 +6,7 @@ const Home = () => {
   return (
     <>
       <section
-        className={`bg-[url("Home/background.svg")]
-         mx-auto min-h-screen bg-cover bg-center 
-         justify-center items-center  w-full
-        bg-opacity-50 min-w-screen overflow-hidden flex flex-col`}
+        className={`bg-[url("Home/background.png")] mx-auto min-h-screen bg-cover bg-center justify-center items-center  w-full bg-opacity-50 min-w-screen overflow-hidden flex flex-col `}
         id="home"
       >
         <div className="flex flex-col  gap-4 text-white font-bold p-5 ">
