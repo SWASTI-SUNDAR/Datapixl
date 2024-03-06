@@ -21,7 +21,6 @@ const Casestudy1 = () => {
           );
         })}
       </div>
-      <Contact />
       <div className="flex justify-center mt-12 mb-16 ">
         <Link onClick={scrollToTop} to={"/"}>
           <SecButton>Go back to home</SecButton>

@@ -11,13 +11,15 @@ import Career from "./Career";
 import PartnerReal from "./PartnerReal";
 import Casestudy from "./Casestudy";
 import Contact from "./Contact";
+import Trial from "./Trial";
 
 const Layout = () => {
   return (
     <div>
-      <Element name="Home">
+      <Element className="Home">
         <Home />
       </Element>
+      <Trial />
       <Element className="about">
         <About />
       </Element>

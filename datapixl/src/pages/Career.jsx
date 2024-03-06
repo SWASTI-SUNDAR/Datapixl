@@ -16,7 +16,7 @@ const Career = () => {
           <span className="text-white text-[20px] leading-8 font-medium ">
             Ready to be part of AI revolution?
             <br />
-            Take the first step towards an exciting career in AI innovation.{" "}
+            Take the first step towards an exciting career in AI{" "}
           </span>
           <div className="pb-5">
             <SecButton>

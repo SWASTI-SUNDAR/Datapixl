@@ -20,7 +20,6 @@ function App() {
           <Route path="/casestudy-1" element={<Casestudy1 />} />
           <Route path="/casestudy-2" element={<Casestudy2 />} />
           <Route path="/casestudy-3" element={<CaseStudy3 />} />
-          <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
       </div>

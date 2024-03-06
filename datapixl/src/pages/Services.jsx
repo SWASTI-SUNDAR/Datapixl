@@ -9,8 +9,8 @@ function Services() {
   return (
     <Container>
       <section id="services" className="min-h-screen  container   mx-auto ">
-        <h1 className=" text-center text-[40px] font-semibold mt-12 mb-12">
-          What We Do?
+        <h1 className=" text-center text-primary text-[40px] font-semibold mt-12 mb-12">
+          What we do?
         </h1>
         <div className="grid lg:grid-cols-2 gap-16 ">
           {ServiceData?.map((item) => (

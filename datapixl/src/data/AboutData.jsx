@@ -1,7 +1,7 @@
 export const AboutData = [
   {
     title: "Gain actionable insights for",
-    subtext: "informed decisions",
+    subtext: "taking informed decisions",
   },
   {
     title: "Optimize operations",
