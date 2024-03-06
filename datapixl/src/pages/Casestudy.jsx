@@ -12,9 +12,9 @@ const Casestudy = () => {
   return (
     <Element className="projects">
       <Container>
-        <div className="container mx-auto mb-20 mt-16 lg:mt-10">
-          <h1 className="repeat text-center ">Case Study</h1>
-          <div className="grid lg:grid-cols-3 gap-16">
+        <div className="container mx-auto mb-20  lg:mt-10">
+          <h1 className="repeat text-center mb-5 ">Case Study</h1>
+          <div className="grid lg:grid-cols-3 lg:gap-16">
             {CaseStudyPage.map((item) => {
               return (
                 <div

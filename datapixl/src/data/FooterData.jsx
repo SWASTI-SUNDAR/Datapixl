@@ -3,7 +3,7 @@ export const FooterData = [
     id: 1,
     title: "logo",
     link: "/",
-    icon: "Footer/logo.svg",
+    icon: "Footer/logooption2.svg",
   },
   // {
   //   id: 2,

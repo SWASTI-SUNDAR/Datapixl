@@ -24,11 +24,14 @@ const About = () => {
                 </span>
                 {AboutData.map((data, index) => {
                   return (
-                    <div key={index} className="flex items-center gap-3 mt-4">
-                      <div className="flex justify-center items-center">
+                    <div
+                      key={index}
+                      className="flex items-start  lg:items-center gap-3 mt-4"
+                    >
+                      <div className="flex justify-center items-start lg:items-center">
                         <img
                           src="/About/correct.svg"
-                          className="object-contain object-center  w-[24px] h-[24px]"
+                          className="object-contain mt-1 lg:mt-0 object-center  w-[24px] h-[24px]"
                           alt=""
                         />
                       </div>
@@ -46,10 +49,10 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div>
+          <div className="flex justify-center items-center mt-12 lg:mt-0 ">
             <img
-              src="/About/aboutimg.svg"
-              className="object-contain  lg:p-0 mdp-0 rounded-lg md:object-cover lg:object-center w-[388px] h-[388px]"
+              src="/About/aboutimg.jpg"
+              className="object-contain   lg:p-0 mdp-0 rounded-lg md:object-cover lg:object-cover lg:w-[388px] lg:h-[388px]"
               alt=""
             />
           </div>

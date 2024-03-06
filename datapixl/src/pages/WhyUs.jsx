@@ -8,8 +8,8 @@ const WhyUs = () => {
       <section className="min-h-screen container mx-auto mt-16  lg:mt-12 ">
         <div
           className={`bg-[url("/Workshop/workshop.svg")] rounded-lg lg:px-32 px-7
-            bg-no-repeat bg-center lg:bg-contain bg-cover  flex flex-col
-             lg:gap-20 gap-12 min-h-screen  mx-auto`}
+            bg-no-repeat bg-center lg:bgcontain bg-cover  flex flex-col
+             lg:gap-20 gap-12 min-h-scree  mx-auto`}
         >
           <div className="flex text-white  flex-col md:justify-center   ">
             <h1 className="text-[30px] lg:text-[40px] mt-14  lg:mt-24 font-semibold ">
@@ -51,7 +51,7 @@ const WhyUs = () => {
                 workshop today!
               </span>
             </div>
-            <div className="lg:mt-16 mt-32 mb-3">
+            <div className="mt-16  mb-10">
               <Meet />
             </div>
           </div>

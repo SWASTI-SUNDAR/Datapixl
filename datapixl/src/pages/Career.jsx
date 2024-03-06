@@ -6,8 +6,8 @@ import { Link } from "react-scroll";
 const Career = () => {
   return (
     <Container>
-      <div className="container max-w-[1330px] mx-auto mt-16 flex justify-center flex-col gap-20">
-        <h1 className="repeat text-center mt-8 mb-2 ">Career</h1>
+      <div className="container max-w-[1330px] mx-auto mt-16 flex justify-center flex-col ">
+        <h1 className="repeat text-center mb-4  ">Career</h1>
         <div
           className={`bg-[url('/Career/career.svg')] rounded-xl  bg-center
          bg-black  bg-cover bg-no-repeat p-10 flex flex-col min-h-72 justify-center gap-5`}

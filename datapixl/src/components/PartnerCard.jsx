@@ -4,7 +4,7 @@ const PartnerCard = ({ data, id }) => {
   return (
     <div
       className={`${
-        data.id == 3 ? "md:w-[50%] mx-auto" : ""
+        data.id == 3 ? "lg:w-[50%] mx-auto" : ""
       } border-primary rounded-xl border-[3px] flex justify-center items-center gap-5 p-5 `}
     >
       <div>

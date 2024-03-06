@@ -25,9 +25,7 @@ const Footer = () => {
                 >
                   {item.title}
                 </Link>
-                <span className=" flex lg:hidden bg-black ">
-                
-                </span>
+                <span className=" flex lg:hidden bg-black "></span>
               </div>
             );
           })}
@@ -37,8 +35,15 @@ const Footer = () => {
             <div className="flex flex-col mt-2 lg:flex-row justify-center lg:items-center gap-5 lg:p-5">
               {FooterData.map((data, index) => {
                 return (
-                  <div key={index} className="flex lg:items-center gap-3 lg:gap-5 lg:p-5">
-                    <img src={data.icon} className="  " alt="icon" />
+                  <div
+                    key={index}
+                    className="flex lg:items-center gap-3 lg:gap-5 lg:p-5"
+                  >
+                    <img
+                      src={data.icon}
+                      className={`${data.id == 1 ? "w-56" : ""}`}
+                      alt="icon"
+                    />
 
                     <div className="">
                       <h1 className="text-[black]">{data.description}</h1>
@@ -50,7 +55,7 @@ const Footer = () => {
           }
         </div>
       </Container>
-      <div className="bg-[#1A2AEA] flex justify-center p-3">
+      <div className="bg-[#1A2AEA] flex justify-center mt-4 p-3">
         <span className="text-white">
           Copyright © 2024, Datapixl. All rights reserved.
         </span>

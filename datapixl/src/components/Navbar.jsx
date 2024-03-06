@@ -48,7 +48,7 @@ const Navbar = () => {
         <div className="flex justify-between  items-center  mx-8 my-6 lg:mx-32 lg:my-3">
           <div className="text-xl font-bold">
             <Goto onClick={scrollToTop} to={"/"}>
-              <img src="/Footer/logo.svg" alt="logo" />
+              <img src="/Footer/logooption2.svg" className="w-44 " alt="logo" />
             </Goto>
           </div>
           <div className=" hidden lg:flex gap-[26px] ">

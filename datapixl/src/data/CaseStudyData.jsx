@@ -4,41 +4,41 @@ export const CaseStudyPAge1 = [
     image: "/Casestudy/case1.jpg",
     heading: "Datapixl Propels client to AI Leadership",
     title:
-      "Facing an AI-driven market, the client lacked internal expertise to compete They partnered with Datapixl for comprehensive Data & AI advisory",
+      "Facing an AI-driven market, the client lacked internal expertise to compete. They partnered with Datapixl for comprehensive Data & AI advisory.",
     text: "Cross-Company AI Strategy",
     Ourapproach: [
       {
-        title: "Cross-Company AI Strategy",
+        title: "Cross-Company AI Strategy:",
         text: " Defined data, use cases, platform, and talent needs.",
       },
       {
-        title: "Data Strategy",
+        title: "Data Strategy::",
         text: "Established an enterprise-wide approach to data architecture, contracts, and regulations.",
       },
       {
-        title: "Prioritized AI Use Cases",
+        title: "Prioritized AI Use Cases:",
         text: "Identified 40+ possibilities, focusing on 10+ high-impact predictive applications.",
       },
       {
-        title: "Roadmap & Value Alignment",
+        title: "Roadmap & Value Alignment:",
         text: "Aligned the roadmap with business priorities, projecting $120M potential value.",
       },
       {
-        title: "Technical & Organizational Support",
+        title: "Technical & Organizational Support:",
         text: "Delivered a data/AI platform architecture and established an optimized onshore-offshore AI team structure.",
       },
     ],
     result: [
       {
-        title: "Master Service Agreement",
+        title: "Master Service Agreement:",
         text: "Enabled data monetization through non-exclusive AI assets.",
       },
       {
-        title: "Approved Roadmap",
+        title: "Approved Roadmap:",
         text: "All stakeholders approved a 46-use case roadmap with $120M projected value.",
       },
       {
-        title: "Unified Architecture",
+        title: "Unified Architecture:",
         text: " A common technical framework was agreed upon with engineering and product teams.",
       },
     ],
@@ -57,8 +57,8 @@ export const CaseStudyPAge2 = [
         text: "Automates 60% of IT support requests, integrating with existing knowledge sources.",
       },
       {
-        title: "Anomaly detection & explanation: ",
-        text: "Uses AI to identify and explain anomalies, generating new revenue",
+        title: "Anomaly detection & explanation",
+        text: "Uses AI to identify and explain anomalies, generating new revenue.",
       },
     ],
     result: [

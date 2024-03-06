@@ -26,10 +26,10 @@ const Home = () => {
             <h1 className=" text-center ">Engineering Services</h1>
           </div>
           <div className="flex justify-center">
-            <h1 className="text-center text-md">
+            <h1 className="text-center text-[20px] text-md">
               Your strategic partner in harnessing the power of <br />{" "}
               predictive and generative AI for unlocking sustainable <br />{" "}
-              business growth.
+              business growth
             </h1>
           </div>
         </div>
@@ -51,7 +51,9 @@ const Home = () => {
             duration={500}
             to="services"
           >
-            <SecButton>Learn more</SecButton>
+            <SecButton>
+              <span className="text-xl">Learn more</span>
+            </SecButton>
           </Link>
         </div>
       </section>

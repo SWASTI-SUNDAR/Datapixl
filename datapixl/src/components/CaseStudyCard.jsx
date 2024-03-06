@@ -24,7 +24,7 @@ const CaseStudyCard = ({ data }) => {
           ></div>
 
           {/* Text */}
-          <h1 className="lg:text-[32px] text-xl text-white z-[100] p-10 pt-32  relative">
+          <h1 className="lg:text-[32px] font-semibold text-xl text-white p-10 pt-32  relative">
             {data.heading}
           </h1>
           <span className="mt-36 text-[14px] lg:py-3 lg:px-5 px-3 py-2 rounded-full ml-10 bg-[#CEF7F3]">
@@ -56,7 +56,10 @@ const CaseStudyCard = ({ data }) => {
             )}
             {data.Ourapproach.map((item, index) => {
               return (
-                <div key={index} className="flex items-center gap-2 mt-4">
+                <div
+                  key={index}
+                  className="flex justify-start items-start lg:items-center gap-2 mt-4"
+                >
                   <img src="/Casestudy/arrow.svg" alt="" />
                   <span className=" font-semibold text-black  ">
                     {item.title}
@@ -78,7 +81,10 @@ const CaseStudyCard = ({ data }) => {
           <div className="mt-5 ml-5">
             {data.result.map((item, index) => {
               return (
-                <div key={index} className="flex items-center gap-2 mt-4">
+                <div
+                  key={index}
+                  className="flex items-start lg:items-center gap-2 mt-4"
+                >
                   <img src="/Casestudy/correct.svg" alt="" />
                   <span className=" font-semibold text-black  ">
                     {item.title}
