@@ -2,11 +2,22 @@ import React from "react";
 import Button from "../components/Button";
 import SecButton from "../components/SecButton";
 import { Link } from "react-scroll";
+import background from "../assets/background.svg";
 const Home = () => {
   return (
     <>
       <section
-        className={`bg-[url("Home/background.png")] mx-auto min-h-screen bg-cover bg-center justify-center items-center  w-full bg-opacity-50 min-w-screen overflow-hidden flex flex-col `}
+        style={{
+          backgroundImage: `url(${background})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          minHeight: "100vh",
+        }}
+        className={` mx-auto min-h-screen bg-cover bg-center justify-center items-center  w-full  min-w-screen overflow-hidden flex flex-col `}
         id="home"
       >
         <div className="flex flex-col  gap-4 text-white font-bold p-5 ">
