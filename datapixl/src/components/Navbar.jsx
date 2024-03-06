@@ -112,7 +112,12 @@ const Navbar = () => {
               <>
                 {/* Apply backdrop blur effect */}
                 <div className="backdrop-filter backdrop-blur-lg">
-                  <div className="flex flex-col justify-center items-center h-[90vh] w-screen gap-10">
+                  <div
+                    onClick={() => {
+                      setShow(!show);
+                    }}
+                    className="flex flex-col justify-center  items-center h-[90vh] w-screen gap-10"
+                  >
                     {NavbarData.map((item, index) => {
                       return (
                         <div key={index}>
@@ -135,13 +140,11 @@ const Navbar = () => {
                         </div>
                       );
                     })}
-                    <button
-                      onClick={() => {
-                        setShow(!show);
-                      }}
-                      className="bg-blue-600 text-xl mt-12 hover:bg-blue-700 focus:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:shadow-outline"
-                    >
+                    <button className="bg-blue-600 text-xl mt-12 hover:bg-blue-700 focus:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:shadow-outline">
                       <Link
+                        onClick={() => {
+                          setShow(!show);
+                        }}
                         spy={true}
                         smooth={true}
                         offset={-100}

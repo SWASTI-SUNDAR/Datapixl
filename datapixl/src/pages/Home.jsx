@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../components/Button";
 import SecButton from "../components/SecButton";
 import { Link } from "react-scroll";
-import background from "../assets/background.svg";
+import background from "../assets/background.png";
 const Home = () => {
   return (
     <>
