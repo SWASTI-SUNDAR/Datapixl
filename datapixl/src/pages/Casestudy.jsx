@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 
 const Casestudy = () => {
   const scrollToTop = () => {
-    const scrollStep = -window.scrollY / (1000 / 15); // Adjust speed if needed (1000/15 is roughly 15ms per frame)
+    const scrollStep = -window.scrollY / (500 / 15); // Increase the divisor for faster scrolling
 
     const scrollInterval = setInterval(() => {
       if (window.scrollY !== 0) {
