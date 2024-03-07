@@ -6,6 +6,7 @@ import SecButton from "../../components/SecButton";
 import { Link } from "react-router-dom";
 import CaseNav from "../../components/CaseNav";
 import Footer from "../../components/Footer";
+import CaseFooter from "../../components/CaseFooter";
 
 const CaseStudy3 = () => {
   const scrollToTop = () => {
@@ -13,7 +14,7 @@ const CaseStudy3 = () => {
   };
   return (
     <div className="">
-    <CaseNav/>
+      <CaseNav />
       <div>
         {CaseStudyPAge3.map((data, index) => {
           return (
@@ -31,7 +32,7 @@ const CaseStudy3 = () => {
           </Link>
         </SecButton>
       </div>
-      <Footer/>
+      <CaseFooter />
     </div>
   );
 };

@@ -7,6 +7,7 @@ import Button from "../../components/Button";
 import SecButton from "../../components/SecButton";
 import CaseNav from "../../components/CaseNav";
 import Footer from "../../components/Footer";
+import CaseFooter from "../../components/CaseFooter";
 
 const Casestudy1 = () => {
   const scrollToTop = () => {
@@ -30,7 +31,7 @@ const Casestudy1 = () => {
           <SecButton>Go back to home</SecButton>
         </Link>
       </div>
-      <Footer />
+      <CaseFooter/>
     </div>
   );
 };

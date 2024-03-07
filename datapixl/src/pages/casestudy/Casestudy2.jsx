@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import Container from "../../components/Container";
 import CaseNav from "../../components/CaseNav";
 import Footer from "../../components/Footer";
+import CaseFooter from "../../components/CaseFooter";
 
 const Casestudy2 = () => {
   const scrollToTop = () => {
@@ -32,7 +33,7 @@ const Casestudy2 = () => {
           </Link>
         </SecButton>
       </div>
-      <Footer/>
+      <CaseFooter/>
     </div>
   );
 };
