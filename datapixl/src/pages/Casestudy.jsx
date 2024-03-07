@@ -7,15 +7,16 @@ import { Element } from "react-scroll";
 
 const Casestudy = () => {
   const scrollToTop = () => {
-    const scrollStep = -window.scrollY / (500 / 15); // Increase the divisor for faster scrolling
+    const scrollStep = -window.scrollY / (1000 / 60); // Adjust speed if needed (1000/60 is roughly 60 frames per second)
 
-    const scrollInterval = setInterval(() => {
-      if (window.scrollY !== 0) {
+    const scroll = () => {
+      if (window.scrollY > 0) {
         window.scrollBy(0, scrollStep);
-      } else {
-        clearInterval(scrollInterval);
+        requestAnimationFrame(scroll);
       }
-    }, 15); // Run every 15ms (roughly 60 frames per second)
+    };
+
+    scroll();
   };
   return (
     <section id="projects">
