@@ -1,31 +1,30 @@
-import React from 'react'
 import React, { useEffect, useState } from "react";
 import { NavbarData } from "../data/NavConstants";
 import Button from "./Button";
 import { Link } from "react-scroll";
-import { Link as Goto } from "react-router-dom";
+import { NavLink, Link as Goto } from "react-router-dom";
 const CaseNav = () => {
-    const [show, setShow] = useState(false);
-    const scrollToTop = () => {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    };
+  const [show, setShow] = useState(false);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const [homePageHeight, setHomePageHeight] = useState(0);
+  const handleClick = (sectionId) => {
+    setShow(false); // Close the menu
 
-    useEffect(() => {
-      const handleScroll = () => {
-        const currentPosition = window.scrollY;
-        setScrollPosition(currentPosition);
-      };
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: "smooth" });
 
-      window.addEventListener("scroll", handleScroll);
-      setHomePageHeight(window.innerHeight); // Get the initial height of the viewport
+    // After a short delay, scroll to the desired section
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    }, 500); // Adjust this timeout if needed
+  };
 
-      return () => {
-        window.removeEventListener("scroll", handleScroll);
-      };
-    }, []);
+  const handelgo = (path) => {};
   return (
     <>
       <nav
@@ -43,19 +42,20 @@ const CaseNav = () => {
             {NavbarData.map((item, index) => {
               return (
                 <div key={index} className="flex group flex-col">
-                  <Link
-                    activeClass="active"
-                    spy={true}
-                    smooth={true}
-                    offset={(item.id = 1 ? -70 : -100)}
-                    duration={500}
-                    // onSetActive={handleSetActive}
-                    to={item.path}
+                  <span
+                    onClick={() => handleClick(item.sectionId)}
+                    className={`text-[#5E5E5E]  font-semibold text-xl`}
                   >
-                    <span className="font-semibold cursor-pointer text-[#5E5E5E] text-[18px] ">
+                    <NavLink
+                    //   spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={item.id > 2 ? 1000 : 500}
+                      to={"/"}
+                    >
                       {item.title}
-                    </span>
-                  </Link>
+                    </NavLink>
+                  </span>
                   <span
                     className={` h-[3px] bg-[#0F62FE] w-0 transition-all duration-300 group-hover:w-full`}
                   ></span>
@@ -65,17 +65,20 @@ const CaseNav = () => {
           </div>
           <div className="hidden lg:flex">
             <Button>
-              <Link
-                activeClass="active"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-                // onSetActive={handleSetActive}
-                to="contact"
+              <span
+                onClick={() => handleClick("contact")}
+                className={`text-black  font-semibold text-xl`}
               >
-                Contact Us
-              </Link>
+                <NavLink
+                //   spy={true}
+                  smooth={true}
+                  offset={-100}
+                  // duration={item.id > 2 ? 1000 : 500}
+                  to={"/"}
+                >
+                  Contact Us
+                </NavLink>
+              </span>
             </Button>
           </div>
           <div className="lg:hidden flex h-8 w-8">
@@ -107,36 +110,38 @@ const CaseNav = () => {
                   {NavbarData.map((item, index) => {
                     return (
                       <div key={index}>
-                        <Link
-                          onClick={() => {
-                            setShow(!show);
-                          }}
-                          spy={true}
-                          smooth={true}
-                          offset={-100}
-                          duration={item.id > 2 ? 1000 : 500}
-                          to={item.path}
+                        <span
+                          onClick={() => handleClick(item.sectionId)}
+                          className={`text-black  font-semibold text-xl`}
                         >
-                          <span className={`text-black  font-semibold text-xl`}>
+                          <NavLink
+                            // spy={true}
+                            smooth={true}
+                            offset={-100}
+                            duration={item.id > 2 ? 1000 : 500}
+                            to={"/"}
+                          >
                             {item.title}
-                          </span>
-                        </Link>
+                          </NavLink>
+                        </span>
                       </div>
                     );
                   })}
                   <button className="bg-blue-600 text-xl mt-4 hover:bg-blue-700 focus:bg-blue-700 text-white font-medium py-2 px-4 rounded-md focus:outline-none focus:shadow-outline">
-                    <Link
-                      onClick={() => {
-                        setShow(!show);
-                      }}
-                      spy={true}
-                      smooth={true}
-                      offset={-100}
-                      duration={500}
-                      to="contact"
+                    <span
+                      onClick={() => handleClick("contact")}
+                      className={`text-black  font-semibold text-xl`}
                     >
-                      Contact Us
-                    </Link>
+                      <NavLink
+                        // spy={true}
+                        smooth={true}
+                        offset={-100}
+                        // duration={item.id > 2 ? 1000 : 500}
+                        to={"/"}
+                      >
+                        Contact Us
+                      </NavLink>
+                    </span>
                   </button>
                 </div>
               </div>
@@ -146,6 +151,6 @@ const CaseNav = () => {
       </nav>
     </>
   );
-}
+};
 
-export default CaseNav
+export default CaseNav;

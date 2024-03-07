@@ -5,6 +5,8 @@ import Contact from "../Contact";
 import CaseStudyCard from "../../components/CaseStudyCard";
 import { Link } from "react-router-dom";
 import Container from "../../components/Container";
+import CaseNav from "../../components/CaseNav";
+import Footer from "../../components/Footer";
 
 const Casestudy2 = () => {
   const scrollToTop = () => {
@@ -12,6 +14,7 @@ const Casestudy2 = () => {
   };
   return (
     <div className="">
+     <CaseNav/>
       <div>
         {CaseStudyPAge2.map((data, index) => {
           return (
@@ -29,6 +32,7 @@ const Casestudy2 = () => {
           </Link>
         </SecButton>
       </div>
+      <Footer/>
     </div>
   );
 };

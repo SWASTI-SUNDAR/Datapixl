@@ -7,10 +7,11 @@ import { Element } from "react-scroll";
 
 const Casestudy = () => {
   const scrollToTop = () => {
-    window.scrollTo(0, 0);
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   };
   return (
-    <Element className="projects">
+    <section id="projects">
       <Container>
         <div className="container mx-auto mb-20 mt-10 lg:mt-10">
           <h1 className="repeat text-[36px] text-center lg:mb-5 ">
@@ -50,7 +51,7 @@ const Casestudy = () => {
           </div>
         </div>
       </Container>
-    </Element>
+    </section>
   );
 };
 

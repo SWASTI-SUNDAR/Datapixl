@@ -14,14 +14,12 @@ function App() {
   return (
     <>
       <div className="overflow-hidden">
-        <Navbar />
         <Routes>
-          <Route path="/" element={<Layout />} />
+          <Route exact path="/" element={<Layout />} />
           <Route path="/casestudy-1" element={<Casestudy1 />} />
           <Route path="/casestudy-2" element={<Casestudy2 />} />
           <Route path="/casestudy-3" element={<CaseStudy3 />} />
         </Routes>
-        <Footer />
       </div>
     </>
   );

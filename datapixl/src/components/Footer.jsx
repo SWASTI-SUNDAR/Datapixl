@@ -20,7 +20,7 @@ const Footer = () => {
                   offset={-100}
                   duration={500}
                   // onSetActive={handleSetActive}
-                  to={item.link}
+                  to={item.path}
                   className="text-black  font-semibold lg:text-[20px] "
                 >
                   {item.title}

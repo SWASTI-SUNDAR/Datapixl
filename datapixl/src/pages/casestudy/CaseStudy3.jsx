@@ -4,6 +4,8 @@ import CaseStudyCard from "../../components/CaseStudyCard";
 import Contact from "../Contact";
 import SecButton from "../../components/SecButton";
 import { Link } from "react-router-dom";
+import CaseNav from "../../components/CaseNav";
+import Footer from "../../components/Footer";
 
 const CaseStudy3 = () => {
   const scrollToTop = () => {
@@ -11,6 +13,7 @@ const CaseStudy3 = () => {
   };
   return (
     <div className="">
+    <CaseNav/>
       <div>
         {CaseStudyPAge3.map((data, index) => {
           return (
@@ -28,6 +31,7 @@ const CaseStudy3 = () => {
           </Link>
         </SecButton>
       </div>
+      <Footer/>
     </div>
   );
 };

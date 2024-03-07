@@ -11,14 +11,15 @@ import Career from "./Career";
 import PartnerReal from "./PartnerReal";
 import Casestudy from "./Casestudy";
 import Contact from "./Contact";
+import Navbar from "../components/Navbar";
 
 const Layout = () => {
   return (
     <div>
+      <Navbar />
       <Element className="Home">
         <Home />
       </Element>
-
       <Element className="about">
         <About />
       </Element>
@@ -32,7 +33,6 @@ const Layout = () => {
         <Casestudy />
       </Element>
       <Partner />
-
       <Element className="partners">
         <PartnerReal />
       </Element>
@@ -42,6 +42,7 @@ const Layout = () => {
       <Element className="contact">
         <Contact />
       </Element>
+      <Footer />
     </div>
   );
 };
