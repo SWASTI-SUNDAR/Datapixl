@@ -29,10 +29,10 @@ const PartnerReal = () => {
                     />
                   </div>
                   <div className="flex justify-center lg:mt-0 lg:items-center flex-col ">
-                    <h1 className="lg:text-[32px] text-[20px] font-semibold ">
+                    <h1 className="lg:text-[26px] text-[20px] font-semibold ">
                       {item.title}
                     </h1>
-                    <h1 className="lg:mt-3  lg:text-center font-normal text-[16px] lg:text-[24px]">
+                    <h1 className="lg:mt-3  lg:text-center font-normal text-[18px] ">
                       {item.desc}
                     </h1>
                   </div>
