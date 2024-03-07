@@ -7,13 +7,15 @@ import { Element } from "react-scroll";
 
 const Casestudy = () => {
   const scrollToTop = () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    const scrollStep = -window.scrollY / (1000 / 15); // Adjust speed if needed (1000/15 is roughly 15ms per frame)
+
+    const scrollInterval = setInterval(() => {
+      if (window.scrollY !== 0) {
+        window.scrollBy(0, scrollStep);
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 15); // Run every 15ms (roughly 60 frames per second)
   };
   return (
     <section id="projects">
