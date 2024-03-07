@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "../components/Container";
 import { CaseStudyPage } from "../data/CaseStudyPage";
 import SecButton from "../components/SecButton";
@@ -7,17 +7,10 @@ import { Element } from "react-scroll";
 
 const Casestudy = () => {
   const scrollToTop = () => {
-    const scrollStep = -window.scrollY / (1000 / 60); // Adjust speed if needed (1000/60 is roughly 60 frames per second)
-
-    const scroll = () => {
-      if (window.scrollY > 0) {
-        window.scrollBy(0, scrollStep);
-        requestAnimationFrame(scroll);
-      }
-    };
-
-    scroll();
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   };
+ 
   return (
     <section id="projects">
       <Container>

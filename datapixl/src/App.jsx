@@ -10,10 +10,12 @@ import Casestudy1 from "./pages/casestudy/Casestudy1";
 import Casestudy2 from "./pages/casestudy/Casestudy2";
 import CaseStudy3 from "./pages/casestudy/CaseStudy3";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   return (
     <>
       <div className="overflow-hidden">
+        <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Layout />} />
           <Route path="/casestudy-1" element={<Casestudy1 />} />
