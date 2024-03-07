@@ -17,7 +17,7 @@ export const PartnerData = [
 export const extraData = {
   id: 3,
   icon: "/Partner/icon3.svg",
-  title: "AI innovation lab: ",
+  title: "Rapid implementation in an agile approach:",
   description:
-    "Leverage our AI innovation lab to experiment, prototype and scale AI solutions",
+    "We seamlessly integrate with your team using agile methods to deliver rapid AI implementation success.",
 };
