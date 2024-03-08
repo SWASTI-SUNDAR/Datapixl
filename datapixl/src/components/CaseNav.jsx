@@ -47,7 +47,7 @@ const CaseNav = () => {
                     className={`text-[#5E5E5E]  font-semibold text-xl`}
                   >
                     <NavLink
-                    //   spy={true}
+                      //   spy={true}
                       smooth={true}
                       offset={-100}
                       duration={item.id > 2 ? 1000 : 500}
@@ -70,7 +70,7 @@ const CaseNav = () => {
                 className={`text-black  font-semibold text-xl`}
               >
                 <NavLink
-                //   spy={true}
+                  //   spy={true}
                   smooth={true}
                   offset={-100}
                   // duration={item.id > 2 ? 1000 : 500}
@@ -117,7 +117,7 @@ const CaseNav = () => {
                           <NavLink
                             // spy={true}
                             smooth={true}
-                            offset={-100}
+                            offset={-70}
                             duration={item.id > 2 ? 1000 : 500}
                             to={"/"}
                           >

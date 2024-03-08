@@ -18,13 +18,13 @@ export const NavbarData = [
     sectionId: "projects",
   },
   {
-    id: 5,
+    id: 4,
     title: "Partner with us",
     path: "partners",
     sectionId: "partners",
   },
   {
-    id: 4,
+    id: 5,
     title: "Careers",
     path: "career",
     sectionId: "career",
