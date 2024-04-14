@@ -11,10 +11,24 @@ import Casestudy2 from "./pages/casestudy/Casestudy2";
 import CaseStudy3 from "./pages/casestudy/CaseStudy3";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import { Helmet } from "react-helmet-async";
 function App() {
   return (
     <>
       <div className="overflow-hidden">
+        <Helmet>
+          <title>
+            AI Engineering Services and Product Advisory Consultancy | Datapixl
+          </title>
+          <meta
+            name="description"
+            content="AI engineering services and product advisory consultancy helping adopt predictive and generative AI across industries for adding business value."
+          />
+          <meta
+            name="keywords"
+            content="Generative AI Consultancy, AI Consultancy, GenAI Consultancy, AI Engineering Services, Generative AI Engineering Services, AI Advisory, GenAI Advisory, GenAI Roadmap, Generative AI Roadmap, AI Roadmap, AI use cases, GenAI use cases, Generative AI use cases"
+          />
+        </Helmet>
         <ScrollToTop />
         <Routes>
           <Route exact path="/" element={<Layout />} />

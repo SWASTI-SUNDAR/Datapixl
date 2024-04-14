@@ -13,28 +13,26 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
-   const handleScroll = () => {
-     const sections = document.querySelectorAll("section");
-     const scrollPosition = window.scrollY + window.innerHeight / 2; // Check if the middle of the section is in the viewport
-     let activeSectionId = null;
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
+      const scrollPosition = window.scrollY + window.innerHeight / 2; // Check if the middle of the section is in the viewport
+      let activeSectionId = null;
 
-     sections.forEach((section) => {
-       const sectionId = section.getAttribute("id");
-       const top = section.offsetTop;
-       const bottom = top + section.offsetHeight;
+      sections.forEach((section) => {
+        const sectionId = section.getAttribute("id");
+        const top = section.offsetTop;
+        const bottom = top + section.offsetHeight;
 
-       if (scrollPosition >= top && scrollPosition < bottom) {
-         activeSectionId = sectionId;
-       }
-     });
+        if (scrollPosition >= top && scrollPosition < bottom) {
+          activeSectionId = sectionId;
+        }
+      });
 
-     const matchingNavItem = NavbarData.find(
-       (item) => item.sectionId === activeSectionId
-     );
-     setActiveSection(matchingNavItem ? matchingNavItem.id : null);
-   };
-
-
+      const matchingNavItem = NavbarData.find(
+        (item) => item.sectionId === activeSectionId
+      );
+      setActiveSection(matchingNavItem ? matchingNavItem.id : null);
+    };
 
     // Set initial active section
     const sections = document.querySelectorAll("section");
