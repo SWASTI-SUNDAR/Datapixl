@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pathbeat.in/
+
+# Sitemaps
+Sitemap: https://pathbeat.in/sitemap.xml
