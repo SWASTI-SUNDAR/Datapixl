@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <div className="min-h-screen container mx-auto mb-5 p-2 ">
+        <div className=" container mx-auto mb-5 p-2 ">
           <h1 className="text-center mt-12 lg:mt-20 lg:mb-12 font-semibold text-secondary text-[36px] lg:text-[40px] ">
             Your AI growth partner
           </h1>

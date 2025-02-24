@@ -45,25 +45,27 @@ export const ServiceData = [
   },
   {
     id: 3,
-    title: "Data & AI Partnership/M&A Due Diligence",
+    title: "Build Your Own Data & AI GCC or CoE",
     icon: "/Services/icon3.svg",
-    Question: "Exploring an AI investment or partnership?",
+    Question:
+      "Need a dedicated development center to drive AI and data innovation?",
     description:
-      "We help you navigate AI Investments with precision. With meticulous Due Diligence, our in-depth assessments empower you with the knowledge needed for high-value AI investment and partnership decisions.",
+      "We specialize in helping companies rapidly establish and scale high-performing Global Capability Centers (GCCs) and Centers of Excellence (CoEs) for Data & AI. Whether in-house, hybrid, or outsourced, we provide end-to-end support for all setups—from launch to building long-term AI competency.",
     benifits: [
       {
-        title: "Gain Competitive Edge :  ",
-        subtext: "Uncover the true potential and limitations of AI companies.",
+        title: "Fast-Track AI & Data Development : ",
+        subtext:
+          "Quickly launch AI/ML and data teams with our expertise, ensuring immediate productivity.",
       },
       {
-        title: "Maximize ROI : ",
+        title: "Hybrid Skill Development :",
         subtext:
-          " Identify AI partnerships that strategically align with your business goals.",
+          "  We embed our experts within your teams, mentoring in-house talent while accelerating delivery.",
       },
       {
-        title: "Minimize Risk :",
+        title: "Scalable & Cost-Effective :",
         subtext:
-          " Mitigate investment pitfalls with nuanced technical and commercial insights.",
+          " Optimize costs without compromising quality, scaling teams efficiently as your needs evolve.",
       },
     ],
   },

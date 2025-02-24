@@ -29,9 +29,7 @@ const Layout = () => {
       <Element className="workshop">
         <WhyUs />
       </Element>
-      <Element className="projects">
-        <Casestudy />
-      </Element>
+     
       <Partner />
       <Element className="partners">
         <PartnerReal />

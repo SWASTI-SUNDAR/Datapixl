@@ -6,7 +6,7 @@ import Container from "../components/Container";
 const Partner = () => {
   return (
     <Container>
-      <section className="mi-h-screen max-w-[1330px] mx-auto  flex flex-col gap-16 ">
+      <section className="mi-h-screen max-w-[1330px] mx-auto  mt-10 flex flex-col gap-16 ">
         <div className="flex flex-col gap-3">
           <h1 className="lg:text-[40px] text-center text-[36px] text-primary font-semibold ">
             Why partner with Datapixl for your AI journey?
