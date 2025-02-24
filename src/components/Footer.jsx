@@ -78,11 +78,11 @@ const FooterrData = [
     title: "Services",
     path: "services",
   },
-  {
-    id: 3,
-    title: "Case Studies",
-    path: "projects",
-  },
+  // {
+  //   id: 3,
+  //   title: "Case Studies",
+  //   path: "projects",
+  // },
   {
     id: 5,
     title: "Partner with us",
